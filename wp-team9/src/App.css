@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+@font-face {
+  font-family: "font1";
+  font-weight: 50;
+  src: url("./fonts/휴먼범석체.ttf") format("truetype");
+}
