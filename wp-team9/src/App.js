@@ -3,22 +3,17 @@ import { Route, Routes } from 'react-router-dom';
 import Login from './components/Login'
 import MyPage from './components/MyPage'
 import Introduction from './components/Introduction';
+import Category from './components/Category';
+import Main from './components/Main';
 
 function App() {
  
-  /*
-  <Routes>
-    <Route path="/" element={<Login />} />
-    <Route path="/login" element={<Login />} />
-    <Route path="/mypage" element={<MyPage />} />
-  </Routes>
-  */
   return(
-    //<Login/>
     <Routes>
-    <Route path="/" element={<Login />} />
+    <Route path="/" element={<Main />} />
     <Route path="/login" element={<Login />} />
     <Route path="/mypage/:id/:pw" element={<MyPage />} />
+    <Route path="/category/:category" element={<Category />} />
     <Route path="/introduction/:id/:restaurant" element={<Introduction />} />
   </Routes>
   );
