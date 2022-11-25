@@ -1,4 +1,7 @@
 # WP-Team9
+
+### `cd wp-team9`
+
 ### `npm install`
 
 ### `npm install axios`
