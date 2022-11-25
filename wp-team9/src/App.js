@@ -6,12 +6,14 @@ import Introduction from './components/Introduction';
 import Category from './components/Category';
 import Main from './components/Main';
 import Subway from './components/Subway';
+import Header from './components/Header';
 
 function App() {
  
   return(
     <Routes>
-    <Route path="/" element={<Subway />} />
+    <Route path="/" element={<Header />} />
+    <Route path="/subway" element={<Subway />} />
     <Route path="/main" element={<Main />} />
     <Route path="/login" element={<Login />} />
     <Route path="/mypage/:id/:pw" element={<MyPage />} />

@@ -1,0 +1,7 @@
+.header{
+    display:"inline-block";
+    margin:0 auto;
+    margin-top: 25px;
+    background-color: lightblue;
+    width: 90%;
+}
