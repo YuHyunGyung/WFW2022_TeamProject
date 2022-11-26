@@ -17,7 +17,7 @@ function App() {
     <Route path="/main" element={<Main />} />
     <Route path="/login" element={<Login />} />
     <Route path="/mypage/:id/:pw" element={<MyPage />} />
-    <Route path="/category/:category" element={<Category />} />
+    <Route path="/category/" element={<Category />} />
     <Route path="/introduction/:id/:restaurant" element={<Introduction />} />
   </Routes>
   );

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../css/Subway.css';
 import restaurant from '../dummy/restaurant.json';
 import SimpleInfo2 from './SimpleInfo2';
+import Header from './Header';
 
 const Subway = () => {
     const name = restaurant.list.filter((r) => (r.subway) === "한성대" )
@@ -12,6 +13,7 @@ const Subway = () => {
 
     return(
         <>
+        <Header />
         <div class="entire">
             <h3 style={{ textAlign: "center" }}>한성대입구역</h3>
             <div class="list" style={{backgroundColor:"lightskyblue"}}>

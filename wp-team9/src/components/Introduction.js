@@ -6,7 +6,9 @@ import userList from '../dummy/user.json';
 import axios from 'axios';
 import MapApi from './MapApi';
 import "../css/Introduction.css";
+import SimpleMenu from './SimpleMenu';
 import SimpleInfo2 from './SimpleInfo2';
+import Header from './Header';
 
 const Introduction = () => {
     var path = useLocation().pathname;
@@ -66,34 +68,34 @@ const Introduction = () => {
         lastOrder = () => {
             axios.get(about);
         }
-    }    
-    /*
-    <SimpleInfo2 name={about.menu.name[0]} price={about.menu.price[0]} img={about.menu.img[0]}></SimpleInfo2>
-                <SimpleInfo2 name={about.menu.name[1]} price={about.menu.price[1]} img={about.menu.img[1]}></SimpleInfo2>
-                <SimpleInfo2 name={about.menu.name[2]} price={about.menu.price[2]} img={about.menu.img[2]}></SimpleInfo2>
-                <SimpleInfo2 name={about.menu.name[3]} price={about.menu.price[3]} img={about.menu.img[3]}></SimpleInfo2>
-    */
+    } 
     //<MapApi address={address}/>
+
+    /*
+    <p>{about.menu.name.join(", ")}</p>
+    <p>{about.menu.price.join(", ")}</p>
+    <p>
+        <img src={process.env.PUBLIC_URL+about.menu.img[0]}></img>
+        <img src={process.env.PUBLIC_URL+about.menu.img[1]}></img>
+        <img src={process.env.PUBLIC_URL+about.menu.img[2]}></img>
+        <img src={process.env.PUBLIC_URL+about.menu.img[3]}></img>
+    </p>
+    */
     return (
         <>
+        <Header />
         <div class="entire">
             <h3 style={{padding:"10px"}}>{name}</h3>
-            <div style={{border: "1px dashed" }}>
-                <p>주소  {address}</p>
-
-                
-                
-               
-                
+            <div style={{border: "1px dashed", padding : "100px"}}>
+                <p><img src={process.env.PUBLIC_URL+"/image/map.png"} style={{marginRight:"10px"}}></img>  {address}</p>
                 <p>메뉴</p>
-                <p>{about.menu.name.join(", ")}</p>
-                <p>{about.menu.price.join(", ")}</p>
-                <p>
-                    <img src={process.env.PUBLIC_URL+about.menu.img[0]}></img>
-                    <img src={process.env.PUBLIC_URL+about.menu.img[1]}></img>
-                    <img src={process.env.PUBLIC_URL+about.menu.img[2]}></img>
-                    <img src={process.env.PUBLIC_URL+about.menu.img[3]}></img>
-                </p>
+                <div class="border" style={{display: "inline-block"}}>
+                <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}> <SimpleMenu name={about.menu.name[0]} price={about.menu.price[0]} img={about.menu.img[0]}></SimpleMenu></div>
+                <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}> <SimpleMenu name={about.menu.name[1]} price={about.menu.price[1]} img={about.menu.img[1]}></SimpleMenu></div>
+                <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}> <SimpleMenu name={about.menu.name[2]} price={about.menu.price[2]} img={about.menu.img[2]}></SimpleMenu></div>
+                <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}> <SimpleMenu name={about.menu.name[3]} price={about.menu.price[3]} img={about.menu.img[3]}></SimpleMenu></div>
+                </div>
+                
 
                 <p>OPEN     {openTime}</p>
                 <p>CLOSE     {closeTime}</p>

@@ -1,12 +1,12 @@
 
 .entire{
-    overflow:scroll;
     padding-top: 150px;
     padding-bottom: 100%;
-    width: 100%;
+    width: 90%;
     height: 100%;
     background-color: white;
-    overflow-y: scroll;
+    border: 1 solid black;
+    font-family: '2';
 }
 
 .group1{
@@ -51,6 +51,10 @@
 }
 
 .likeRes{
-    padding:10px;
     display:"inline-block";
+    background-color:"white";
+    border: 1px solid black;
+    width: 80%;
+    margin:0 auto;
+    border-radius:20px;
 }

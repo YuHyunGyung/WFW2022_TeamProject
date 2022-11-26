@@ -39,7 +39,14 @@
 
 
 @font-face {
-  font-family: "font1";
-  font-weight: 50;
-  src: url("./fonts/휴먼범석체.ttf") format("truetype");
+  font-family: "1";
+  src: url("./font/Gaegu-Regular.ttf") format('svg');
+}
+@font-face {
+  font-family: "2";
+  src: url("./font/Gaegu-Light.ttf") format('svg');
+}
+@font-face {
+  font-family: "2";
+  src: url("./font/Gaegu-Bold.ttf") format('svg');
 }

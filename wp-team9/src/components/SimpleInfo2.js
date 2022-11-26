@@ -25,7 +25,9 @@ const SimpleInfo2 = ( props ) => {
         <CardContent>
             <Typography variant="body1" component="p">
                 <img src={process.env.PUBLIC_URL+img} style={{width:"200px", height:"150px", marginLeft:"5px"}}/> <br />
+                
             </Typography>
+
         </CardContent>
         <CardActions>
             <Link to = {"/introduction/"+"1234"+"/"+name}>

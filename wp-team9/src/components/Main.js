@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import '../css/Main.css';
+import Header from './Header';
 
 const Main = () => {
 
     return (
         <>
+        <Header/>
         <div class="entire">
-            <h3 style={{ textAlign: "center" }}>Main</h3>
             <div class="imgView">
             <img class="img"src={process.env.PUBLIC_URL+"/image/main.png"} />
             </div>

@@ -1,7 +1,19 @@
 .header{
-    display:"inline-block";
+    display:"inline";
     margin:0 auto;
-    margin-top: 25px;
-    background-color: lightblue;
     width: 90%;
+    height: 100px;
+    padding:30px;
+    text-align: center;
+}
+
+.menu{
+    color: rgb(0, 200, 255);;
+    font-family: '3';
+    width: 300px;
+    background-color: white;
+    border:3px solid rgb(180, 239, 255);
+    border-radius:"30px";
+    font-size:"30px";
+    margin-left:"30px";
 }

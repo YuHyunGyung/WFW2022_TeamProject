@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../css/Category.css';
 import restaurant from '../dummy/restaurant.json';
 import SimpleInfo2 from './SimpleInfo2';
+import Header from './Header';
 
 const Category = () => {
     var nameList = [];
@@ -17,10 +18,10 @@ const Category = () => {
 
     return (
         <>
+        <Header />
         <div class="entire">
-            <h3 style={{ textAlign: "center" }}>카테고리</h3>
+            <h3 style={{ textAlign: "center" }}>중식</h3>
             <div class="list" style={{backgroundColor:"lightskyblue"}}>
-                <p style={{marginLeft:"15px", fontWeight:"bold"}}>좋아요한 식당 List</p>
                 <div>
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo2 name = {name[0].rastaurant} img={name[0].rImg}></SimpleInfo2></div>
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo2 name = {name[1].rastaurant} img={name[1].rImg}></SimpleInfo2></div>

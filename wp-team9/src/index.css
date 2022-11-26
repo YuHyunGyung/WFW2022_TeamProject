@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "1";
+  src: url("./font/Gaegu-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: "2";
+  src: url("./font/Gaegu-Light.ttf") format('truetype');
+}
+@font-face {
+  font-family: "3";
+  src: url("./font/Gaegu-Bold.ttf") format('truetype');
+}

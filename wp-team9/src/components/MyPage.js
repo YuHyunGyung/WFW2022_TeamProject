@@ -3,6 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 import userList from '../dummy/user.json';
 import '../css/MyPage.css';
 import SimpleInfo1 from './SimpleInfo1';
+import Header from './Header';
 
 const MyPage = () => {
     
@@ -50,6 +51,7 @@ const MyPage = () => {
 
     return(
         <>
+        <Header />
         <div class="entire">
             <h3 style={{ textAlign: "center" }}>마이페이지</h3>
             <div class="group1">
@@ -59,20 +61,13 @@ const MyPage = () => {
                 </div>
             
             </div>
-            <div class="likeRes" style={{backgroundColor:"deepskyblue"}}>
-                <p style={{marginLeft:"15px", fontWeight:"bold"}}>좋아요한 식당 List</p>
+            <p style={{marginLeft:"15px", fontWeight:"bold"}}>좋아요한 식당 List</p>
+            <div class="likeRes" style={{}}>
+                
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo1 id = {id} restaurant={like[0]}></SimpleInfo1></div>
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo1 id = {id} restaurant={like[1]}></SimpleInfo1></div>
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo1 id = {id} restaurant={like[2]}></SimpleInfo1></div>
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo1 id = {id} restaurant={like[3]}></SimpleInfo1></div>
-                <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo1 id = {id} restaurant={like[3]}></SimpleInfo1></div>
-            </div>
-            <div class="likeRes" style={{backgroundColor:"deepskyblue"}}>
-                <p style={{marginLeft:"15px", fontWeight:"bold"}}>최근 본 식당 List</p>
-                <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}>
-                    
-                </div>
-                
             </div>
             <div class="bottom">
                 <Link to={"/"}>
