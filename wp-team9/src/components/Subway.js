@@ -1,36 +1,60 @@
-import React, { useEffect, useState } from 'react';
-import '../css/Subway.css';
-import restaurant from '../dummy/restaurant.json';
-import SimpleInfo2 from './SimpleInfo2';
+import React, {useState} from 'react';
+
+import SubwaySlider from './SubwaySlider';
+
+import '../css/Subway1.css';
+
 import Header from './Header';
 
 const Subway = () => {
-    const name = restaurant.list.filter((r) => (r.subway) === "한성대" )
-    //const img = restaurant.list.filter((r) => (r.category) === "중식" )
-    console.log(name);
-    console.log(name[1].rastaurant);
-    console.log(name[1].rImg);
+    const [ sidebar, setSidebar ] = useState(false);
+    const toggleSidebar = () => setSidebar(prevState => !prevState);
 
-    return(
+    const haehwa = `${process.env.PUBLIC_URL + `/image/haehwaSubway.png`}`;
+    const hansung = `${process.env.PUBLIC_URL + `/image/hansungSubway.png`}`;
+    const sungsin = `${process.env.PUBLIC_URL + `/image/sungsinSubway.png`}`;
+    const prevBtn = `${process.env.PUBLIC_URL + `/image/left_btn.png`}`;
+    const nextBtn = `${process.env.PUBLIC_URL + `/image/right_btn.png`}`;
+
+    const slideImgList = [haehwa, hansung, sungsin];
+    const slideImgLength = slideImgList.length-1;
+    const subwayList = ["혜화", "한성대", "성신여대"];
+
+    const [currentList, setCurrentList] = useState(1);
+
+    const prev = () => {
+        if(currentList === 0) {
+            setCurrentList(slideImgLength);
+        }
+        else {
+            setCurrentList(currentList-1);
+        }
+    }
+    const next= () => {
+        if(currentList >= slideImgLength) {
+            setCurrentList(0);
+        }
+        else {
+            setCurrentList(currentList+1);
+        }
+    }
+    //useEffect = (() => console.log(`${subwayList[currentList]}`), [currentList]);
+
+
+    return (
         <>
-        <Header />
-        <div class="entire">
-            <h3 style={{ textAlign: "center" }}>한성대입구역</h3>
-            <div class="list" style={{backgroundColor:"lightskyblue"}}>
-                <div>
-                <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo2 name = {name[0].rastaurant} img={name[0].rImg}></SimpleInfo2></div>
-                <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo2 name = {name[1].rastaurant} img={name[1].rImg}></SimpleInfo2></div>
-                <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo2 name = {name[2].rastaurant} img={name[2].rImg}></SimpleInfo2></div>
-                </div>
-                <div>
-                <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo2 name = {name[3].rastaurant} img={name[3].rImg}></SimpleInfo2></div>
-                <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo2 name = {name[4].rastaurant} img={name[4].rImg}></SimpleInfo2></div>
-                <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo2 name = {name[5].rastaurant} img={name[5].rImg}></SimpleInfo2></div>
-                </div>
+        <div>
+        <div className='subway'>
+            <div className='subway-top'>
+                <div className='prev'><img src={prevBtn} onClick={prev}/></div>
+                <div className='content'><img src={slideImgList[currentList]}/></div>
+                <div className='next'><img src={nextBtn} onClick={next}/></div>
             </div>
         </div>
-        </>
+
+            <SubwaySlider props={subwayList[currentList]} />
+        </div>
+       </>
     );
 }
-
-export default Subway;
+export default Subway; 

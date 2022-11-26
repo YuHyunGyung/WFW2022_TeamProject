@@ -1,16 +1,21 @@
-.entire{
-    overflow:scroll;
-    padding-top: 150px;
-    padding-bottom: 100%;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    overflow-y: scroll;
-}
-
-.list{
+.subway {
     width: 70%;
-    border-radius: 10px;
     margin: 0 auto;
+    /* margin-top: 200px; */
 }
 
+.subway-top {
+    /* position: fixed; */
+    padding: 200px 150px 50px 150px;
+    margin-left: 70px;
+}
+
+.subway-top div {
+    display: inline-block;
+}
+
+div > img {
+    width: 200px;
+    height: 50px;
+    object-fit: cover;
+}
