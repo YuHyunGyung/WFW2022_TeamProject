@@ -58,7 +58,7 @@ const MyPage = () => {
                 <div class="img"><img src={process.env.PUBLIC_URL+img} style={{width : "100px", height:"100px"}}></img><span style={{paddingTop:"10px", fontSize:"30px", marginLeft:"20px"}}>{id}</span></div>
             
             </div>
-            <p style={{marginLeft:"15px", fontWeight:"bold", textAlign:"center", fontSize:"20px"}}>좋아요한 식당 List</p>
+            <p style={{marginLeft:"15px", fontWeight:"bold", textAlign:"center", fontSize:"20px", fontWeight:"bold"}}>좋아요한 식당 List</p>
             <div class="likeRes" style={{}}>
                 
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo1 id = {id} restaurant={like[0]}></SimpleInfo1></div>

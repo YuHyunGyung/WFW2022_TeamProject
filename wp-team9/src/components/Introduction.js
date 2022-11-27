@@ -70,18 +70,7 @@ const Introduction = () => {
             axios.get(about);
         }
     } 
-    //<MapApi address={address}/>
 
-    /*
-    <p>{about.menu.name.join(", ")}</p>
-    <p>{about.menu.price.join(", ")}</p>
-    <p>
-        <img src={process.env.PUBLIC_URL+about.menu.img[0]}></img>
-        <img src={process.env.PUBLIC_URL+about.menu.img[1]}></img>
-        <img src={process.env.PUBLIC_URL+about.menu.img[2]}></img>
-        <img src={process.env.PUBLIC_URL+about.menu.img[3]}></img>
-    </p>
-    */
     return (
         <>
         <Header />

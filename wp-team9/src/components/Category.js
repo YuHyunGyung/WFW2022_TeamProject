@@ -23,7 +23,7 @@ const Category = () => {
         <Header />
         <div class="entire">
         <CategoryHeader />
-            <h3 style={{ textAlign: "center" }}>{what}</h3>
+            <h3 style={{ textAlign: "center", fontSize:"50px" }}>{what}</h3>
             <div class="list">
                 <div>
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"50px"}}><SimpleInfo2 name = {name[0].rastaurant} img={name[0].rImg}></SimpleInfo2></div>
