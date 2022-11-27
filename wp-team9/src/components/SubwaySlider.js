@@ -41,20 +41,18 @@ const SubwaySlider = ({props}) => {
         <div className="autoSlider">
             <Slider {...settings}>
                 {subwayList.map( item => (
-
-                        <div className="subwayslider-menu">
-                            <div className="menu-top">
-                                <Link to={`/introduction/${item.rastaurant}`}>
-                                <img src={process.env.PUBLIC_URL + `${item.rImg}`} alt={item.rastaurant}/>
-                                </Link>
-                                <h1>{item.rastaurant}</h1>
-                            </div>
-                            <div className="menu-bottom">
-                                <p>지하철역: {item.subway}</p>
-                                <p className="category">카테고리: {item.category}</p>
-                            </div>                        
+                    <div className="subwayslider-menu">
+                        <div className="menu-top">
+                            <Link to={`/introduction/user1/${item.rastaurant}`}>
+                            <img src={process.env.PUBLIC_URL + `${item.rImg}`} alt={item.rastaurant}/>
+                            </Link>
+                            <h1>{item.rastaurant}</h1>
                         </div>
-                    
+                        <div className="menu-bottom">
+                            <p>지하철역: {item.subway}</p>
+                            <p className="category">카테고리: {item.category}</p>
+                        </div>                        
+                    </div>
                 ))}
             </Slider>
         </div>        

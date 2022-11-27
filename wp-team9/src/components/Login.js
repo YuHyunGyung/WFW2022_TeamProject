@@ -54,7 +54,7 @@ const Login = () => {
           
           <br></br>
         <div class="loginDiv"> 
-          <Link to={"/mypage/"+loginId+"/"+loginPassword}>
+          <Link to={"/main"}>
             <button id="loginBtn" onClick={login}>Login</button>
           </Link>
         </div>

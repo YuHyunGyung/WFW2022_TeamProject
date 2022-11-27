@@ -53,15 +53,12 @@ const MyPage = () => {
         <>
         <Header />
         <div class="entire">
-            <h3 style={{ textAlign: "center" }}>마이페이지</h3>
+            <h3 style={{ textAlign: "center", marginBottom:"30px", fontSize:"50px"}}>마이페이지</h3>
             <div class="group1">
-                <div class="img"><img src={process.env.PUBLIC_URL+img} style={{width : "100px", height:"100px"}}></img></div>
-                <div class="info">
-                    <p style={{paddingTop:"10px", fontSize:"30px"}}>ID : {id}</p>
-                </div>
+                <div class="img"><img src={process.env.PUBLIC_URL+img} style={{width : "100px", height:"100px"}}></img><span style={{paddingTop:"10px", fontSize:"30px", marginLeft:"20px"}}>{id}</span></div>
             
             </div>
-            <p style={{marginLeft:"15px", fontWeight:"bold"}}>좋아요한 식당 List</p>
+            <p style={{marginLeft:"15px", fontWeight:"bold", textAlign:"center", fontSize:"20px"}}>좋아요한 식당 List</p>
             <div class="likeRes" style={{}}>
                 
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"10px"}}><SimpleInfo1 id = {id} restaurant={like[0]}></SimpleInfo1></div>

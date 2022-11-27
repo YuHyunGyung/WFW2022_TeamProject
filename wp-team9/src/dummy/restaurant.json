@@ -154,7 +154,7 @@
             "menu" : {
                 "name" : ["육해공얼큰짬뽕", "해물쟁반짜장", "차돌박이짬뽕", "팔보해물쟁반짜장"],
                 "price" : ["13000원", "9000원", "11000원", "23000원"],
-                "img" : ["/image/mImg/육해공얼큰짬뽕.jpeg", "/image/mImg/해물쟁반짜장.jpeg", "/image/mImg/차돌박이짬뽕.jepg", "/image/mImg/팔보해물쟁반짜장.jpeg"]
+                "img" : ["/image/mImg/육해공얼큰짬뽕.jpeg", "/image/mImg/해물쟁반짜장.jpeg", "/image/mImg/차돌박이짬뽕.jpeg", "/image/mImg/팔보해물쟁반짜장.jpeg"]
             },
             "openTime" : "10:00",
             "closeTime" : "20:40",
@@ -619,7 +619,7 @@
             "address" : "서울 성북구 성북로 11",
             "menu" : {
                 "name" : ["키토 크림치즈 호두 김밥", "우리 숙성지 참치 김밥", "갈비만두", "든든 치킨 카레"],
-                "price" : ["6500원", "6800원", "5500원", "9500d원"],
+                "price" : ["6500원", "6800원", "5500원", "9500원"],
                 "img" : ["/image/mImg/키토 크림치즈 호두 김밥.jpeg", "/image/mImg/우리 숙성지 참치 김밥.jpeg", "/image/mImg/갈비만두.jpeg", "/image/mImg/든든 치킨 카레.jpeg"]
             },
             "openTime" : "10:00",

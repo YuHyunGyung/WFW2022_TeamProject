@@ -103,16 +103,12 @@ const Introduction = () => {
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}><p>BREAK</p><p>{about.breakTime.start + " ~ " + about.breakTime.end}</p></div>
 
                 
-                <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}><p>Last Order</p><p>{openTime}</p></div>
-                
+                <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}><p>Last Order</p><p>{about.lastOrder.점심}</p></div>
+                <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}><p>Last Order</p><p>{about.lastOrder.저녁}</p></div>                
 
-                <p>OPEN     {openTime}</p>
-                <p>CLOSE     {closeTime}</p>
-                <p>BREAK     {about.breakTime.start + " ~ " + about.breakTime.end}</p>
+               
                 <p>휴무일 {dayOff}</p>
                 <p>Tel {tel}</p>
-                <p >LastOrder 점심 : {about.lastOrder.점심}</p>
-                <p>LastOrder 저녁 : {about.lastOrder.저녁}</p>
             </div>
             <div class="bottom">
                 <button class="back" onClick={() => navigate(-1)}>뒤로가기</button>

@@ -15,7 +15,7 @@ function App() {
  
   return(
     <Routes>
-    <Route path="/" element={<CategoryHeader />} />
+    <Route path="/" element={<Login />} />
     <Route path="/subway" element={<Subway />} />
     <Route path="/main" element={<Main />} />
     <Route path="/login" element={<Login />} />
