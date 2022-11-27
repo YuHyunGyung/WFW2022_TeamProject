@@ -3,10 +3,9 @@
 .loginWrap{
     border-radius: 20px;
     text-align: center;
-    padding-top: 300px;
     margin : 0 auto;
     width: 500px;
-    height: 550px;
+    height: 250px;
     background-color: rgb(220, 255, 255);
     border: 3px solid black;
 }

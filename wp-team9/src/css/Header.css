@@ -2,18 +2,17 @@
     display:"inline";
     margin:0 auto;
     width: 90%;
-    height: 100px;
-    padding:30px;
+    height: 40px;
     text-align: center;
 }
 
-.menu{
+.pbar{
     color: rgb(0, 200, 255);;
-    font-family: '3';
+    font-family: "2";
     width: 300px;
-    background-color: white;
+    height: 40px;
     border:3px solid rgb(180, 239, 255);
-    border-radius:"30px";
-    font-size:"30px";
-    margin-left:"30px";
+    border-radius:30px;
+    font-size:30px;
+    margin-left:30px;
 }

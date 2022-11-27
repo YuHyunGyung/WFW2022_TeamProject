@@ -37,10 +37,6 @@ const SubwaySlider = ({props}) => {
     
     return(
         <>
-        {/* 
-        <HeaderBar  openSidebar={toggleSidebar}/>
-        <SideBar sidebar={sidebar} closeSidebar={toggleSidebar} />  
-        */}
 
         <div className="autoSlider">
             <Slider {...settings}>

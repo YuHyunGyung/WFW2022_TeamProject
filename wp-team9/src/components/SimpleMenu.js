@@ -13,12 +13,10 @@ import userList from "../dummy/user.json";
 import { useLocation, Link } from 'react-router-dom';
 
 const SimpleMenu = (props) => {
-  
-
   return(
-    <div style={{width:"280px", height:"200px", textAlign:"center"}}>
+    <div style={{width:"280px", height:"200px", textAlign:"center", fontSize:"30px"}}>
       <Card elevation={5}>
-        <CardHeader title={props.name}/>
+        <CardHeader title={props.name}></CardHeader>
         <CardContent>
             {props.price}
             <Typography variant="body1" component="p">

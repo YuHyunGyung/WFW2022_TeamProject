@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import SubwaySlider from './SubwaySlider';
 
-import '../css/Subway1.css';
+import '../css/Subway.css';
 
 import Header from './Header';
 
@@ -43,6 +43,7 @@ const Subway = () => {
 
     return (
         <>
+        <Header />
         <div>
         <div className='subway'>
             <div className='subway-top'>
@@ -51,8 +52,7 @@ const Subway = () => {
                 <div className='next'><img src={nextBtn} onClick={next}/></div>
             </div>
         </div>
-
-            <SubwaySlider props={subwayList[currentList]} />
+        <SubwaySlider props={subwayList[currentList]} />
         </div>
        </>
     );

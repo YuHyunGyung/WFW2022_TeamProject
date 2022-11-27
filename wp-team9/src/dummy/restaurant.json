@@ -29,9 +29,9 @@
             "rImg" : "/image/rImg/밥짓고티우림.jpeg",
             "address" : "서울 성북구 성북로2길 15",
             "menu" : {
-                "name" : ["보쌈 한 상", "연잎밥과 장아찌", "황태 한상", "닭안심 한상"],
+                "name" : ["보쌈 한 상", "연잎밥과 장아찌 한 상", "황태 한 상", "닭안심 한 상"],
                 "price" : ["14000원", "13000원", "13000원", "13000원"],
-                "img" : ["/image/mImg/보쌈 한 상.jpeg", "/image/mImg/연잎밥과 장아찌.jpeg", "/image/mImg/황태 한상.jpeg", "/image/mImg/닭안심 한상.jpeg"]
+                "img" : ["/image/mImg/보쌈 한 상.jpeg", "/image/mImg/연잎밥과 장아찌 한 상.jpeg", "/image/mImg/황태 한 상.jpeg", "/image/mImg/닭안심 한 상.jpeg"]
             },
             "openTime" : "11:00",
             "closeTime" : "21:00",
@@ -69,17 +69,17 @@
             },
             "dayOff" : null,
             "tel" : "0507-1355-9977",
-            "subway" : "한식",
-            "category" : "혜화"
+            "subway" : "혜화",
+            "category" : "한식"
         },
         {
             "rastaurant" : "혜화도담",
             "rImg" : "/image/rImg/혜화도담.jpeg",
             "address" : "서울 종로구 대명1길 16-6 혜화도담",
             "menu" : {
-                "name" : ["김치찜", "돼지갈비찜", "대파전", "낚지볶음"],
+                "name" : ["김치찜", "돼지갈비찜", "대파전", "낙지볶음"],
                 "price" : ["20000원", "28000원", "13000원", "27000원"],
-                "img" : ["/image/mImg/김치찜.png", "/image/mImg/돼지갈비찜.jpg", "/image/mImg/대파전.png", "/image/mImg/낚지볶음.png"]
+                "img" : ["/image/mImg/김치찜.png", "/image/mImg/돼지갈비찜.jpg", "/image/mImg/대파전.png", "/image/mImg/낙지볶음.png"]
             },
             "openTime" : "11:30",
             "closeTime" : "22:00",
@@ -93,8 +93,8 @@
             },
             "dayOff" : null,
             "tel" : "0507-1343-0074",
-            "subway" : "한식",
-            "category" : "혜화"
+            "subway" : "혜화",
+            "category" : "한식"
         },
         
         {
@@ -815,9 +815,9 @@
             "rImg" : "/image/rImg/셰이디드.jpeg",
             "address" : "서울 종로구 성균관로3길 15 1층",
             "menu" : {
-                "name" : ["썸머라떼", "바나나푸딩", "휘낭시에", "패션프로츠우유"],
+                "name" : ["썸머라떼", "바나나푸딩", "휘낭시에", "패션프루츠우유"],
                 "price" : ["6000원", "5000원", "변동", "6000원"],
-                "img" : ["/image/mImg/썸머라떼.jpeg", "/image/mImg/바나나푸딩.jpeg", "/image/mImg/휘낭시에.png", "/image/mImg/패션프로츠우유.png"]
+                "img" : ["/image/mImg/썸머라떼.jpeg", "/image/mImg/바나나푸딩.jpeg", "/image/mImg/휘낭시에.png", "/image/mImg/패션프루츠우유.png"]
             },
             "openTime" : "12:00",
             "closeTime" : "21:00",

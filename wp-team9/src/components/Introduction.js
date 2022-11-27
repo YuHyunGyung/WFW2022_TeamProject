@@ -4,11 +4,11 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import restaurant from '../dummy/restaurant.json';
 import userList from '../dummy/user.json';
 import axios from 'axios';
-import MapApi from './MapApi';
 import "../css/Introduction.css";
 import SimpleMenu from './SimpleMenu';
-import SimpleInfo2 from './SimpleInfo2';
 import Header from './Header';
+import SimpleInfo2 from './SimpleInfo2';
+import CategoryHeader from './CategoryHeader';
 
 const Introduction = () => {
     var path = useLocation().pathname;
@@ -59,6 +59,7 @@ const Introduction = () => {
         breakTime = () => {
             axios.get(about);
         }
+        
         if(about.dayOff == null){
             dayOff = "연중무휴";
         }
@@ -85,16 +86,24 @@ const Introduction = () => {
         <>
         <Header />
         <div class="entire">
-            <h3 style={{padding:"10px"}}>{name}</h3>
-            <div style={{border: "1px dashed", padding : "100px"}}>
+        <CategoryHeader />
+            <h3 style={{fontWeight:"bold", fontSize:"30px", textAlign:"center"}}>{name}</h3>
+            <div style={{border: "5px solid skyBlue", padding : "20px", margin:"30px", borderRadius:"30px", textAlign:"center"}}>
                 <p><img src={process.env.PUBLIC_URL+"/image/map.png"} style={{marginRight:"10px"}}></img>  {address}</p>
-                <p>메뉴</p>
+                <p style={{fontWeight:"bold", fontSize:"30px", textAlign:"center", backgroundColor:"yellow", width:"80px", margin:"0 auto", marginBottom:"10px", borderRadius:"20px"}}>MENU</p>
                 <div class="border" style={{display: "inline-block"}}>
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}> <SimpleMenu name={about.menu.name[0]} price={about.menu.price[0]} img={about.menu.img[0]}></SimpleMenu></div>
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}> <SimpleMenu name={about.menu.name[1]} price={about.menu.price[1]} img={about.menu.img[1]}></SimpleMenu></div>
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}> <SimpleMenu name={about.menu.name[2]} price={about.menu.price[2]} img={about.menu.img[2]}></SimpleMenu></div>
                 <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}> <SimpleMenu name={about.menu.name[3]} price={about.menu.price[3]} img={about.menu.img[3]}></SimpleMenu></div>
                 </div>
+                
+                <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}><p style={{margin:"0 auto"}}>OPEN</p><p>{openTime}</p></div>
+                <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}><p>CLOSE</p><p>{closeTime}</p></div>
+                <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}><p>BREAK</p><p>{about.breakTime.start + " ~ " + about.breakTime.end}</p></div>
+
+                
+                <div style={{display:"inline-block", boxSizing: "border-box", margin:"15px"}}><p>Last Order</p><p>{openTime}</p></div>
                 
 
                 <p>OPEN     {openTime}</p>
@@ -105,11 +114,8 @@ const Introduction = () => {
                 <p >LastOrder 점심 : {about.lastOrder.점심}</p>
                 <p>LastOrder 저녁 : {about.lastOrder.저녁}</p>
             </div>
-
             <div class="bottom">
-                
-                    <button class="back" onClick={() => navigate(-1)}>뒤로가기</button>
-
+                <button class="back" onClick={() => navigate(-1)}>뒤로가기</button>
             </div>
         </div>
         </>
