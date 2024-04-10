@@ -1,4 +1,6 @@
 # WP-Team9
+학교 주변 맛집 웹사이트 팀프로젝트
+
 # err 발생시 --legacy-peer-deps 붙여서 install
 
 ### `cd wp-team9`
